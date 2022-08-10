@@ -1,0 +1,21 @@
+body {
+    background-color: #354e4b;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #333333;
+    position: fixed;
+}
+
+a {
+    color: #f1f9f9;
+}
+
+a:hover {
+    color: #f0f0f0;
+  }
+
+span {
+    color: aqua;
+}
