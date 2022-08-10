@@ -1,0 +1,381 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🫘 CKD PREDICTION </title>
+
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="static/css/styles.css">
+
+</head>
+
+<body>
+
+    <!-- As a heading -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Chronic Kidney Disease Prediction</a>
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br>
+
+
+    <div class="container">
+
+
+
+        <form action="\predict" method="post">
+
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Age</h5>
+                            <!-- Age of Patient -->
+                            <input type="number" name="Age" id="Age" required="required">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Blood Pressure</h5>
+                            <!-- Blood Pressure -->
+                            <input type="number" name="Blood_Pressure" id="Blood_Pressure" required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Specific Gravity -->
+                            <h5 class="card-title">Specific Gravity</h5>
+                            <input type="text" name="Specific_Gravity" id="Specific_Gravity" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Albumin</h5>
+                            <!-- Albumin -->
+                            <input type="number" name="Albumin" id="Albumin" required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Sugar  -->
+                            <h5 class="card-title">Sugar</h5>
+                            <input type="number" name="Sugar" id="Sugar" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Red Blood Cells</h5>
+                            <!-- Red_Blood_Cells -->
+                            <input type="number" name="Red_Blood_Cells" id="Red_Blood_Cells" required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Pus Cell  -->
+                            <h5 class="card-title">Pus Cell</h5>
+                            <input type="number" name="Pus_Cell" id="Pus_Cell" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Pus Cell Clumps</h5>
+                            <!-- Pus_Cell_Clumps -->
+                            <input type="number" name="Pus_Cell_Clumps" id="Pus_Cell_Clumps" required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Bacteria  -->
+                            <h5 class="card-title">Bacteria</h5>
+                            <input type="number" name="Bacteria" id="Bacteria" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Blood Glucose Random</h5>
+                            <!-- Blood Glucose Random< -->
+                            <input type="number" name="Blood_Glucose_Random" id="Blood_Glucose_Random" required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Blood Urea  -->
+                            <h5 class="card-title">Blood Urea</h5>
+                            <input type="number" name="Blood_Urea" id="Blood_Urea" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Serum Creatinine</h5>
+                            <!-- serum_creatinine -->
+                            <input type="text" name="Serum_Creatinine" id="Serum_Creatinine" required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Sodium  -->
+                            <h5 class="card-title">Sodium</h5>
+                            <input type="number" name="Sodium" id="Sodium" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Potassium</h5>
+                            <!-- Potassium -->
+                            <input type="number" name="Potassium" id="Potassium" required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- hemoglobin  -->
+                            <h5 class="card-title">Hemoglobin</h5>
+                            <input type="number" name="Hemoglobin" id="Hemoglobin" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Packed Cell Volume</h5>
+                            <!-- Packed Cell Volume -->
+                            <input type="number" name="Packed_Cell_Volume" id="Packed_Cell_Volume" required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- white_blood_cell_count  -->
+                            <h5 class="card-title">White Blood Cell Count</h5>
+                            <input type="number" name="White_Blood_Cell_Count" id="White_Blood_Cell_Count" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Red Blood Cell Count</h5>
+                            <!-- red_blood_cell_count -->
+                            <input type="text" name="Red_Blood_Cell_Count" id="Red_Blood_Cell_Count" required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- hypertension -->
+                            <h5 class="card-title">Hypertension</h5>
+                            <input type="number" name="Hypertension" id="Hypertension" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Diabetes Mellitus</h5>
+                            <!-- diabetes_mellitus-->
+                            <input type="number" name="Diabetes_Mellitus" id="Diabetes_Mellitus" required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- coronary_artery_disease  -->
+                            <h5 class="card-title">Coronary Artery Disease</h5>
+                            <input type="number" name="Coronary_Artery_Disease" id="Coronary_Artery_Disease" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Appetite</h5>
+                            <!-- appetite -->
+                            <input type="number" name="Appetite" id="Appetite" required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- pedal_edema  -->
+                            <h5 class="card-title">Pedal Edema</h5>
+                            <input type="number" name="Pedal_Edema" id="Pedal_Edema" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Anemia</h5>
+                            <!-- anemia-->
+                            <input type="number" name="Anemia" id="Anemia" required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            
+
+
+
+            <br>
+            <br>
+            <br>
+            <!-- Submit -->
+            <input type="submit" value="Submit" class="btn btn-secondary">
+        </form>
+
+        <br>
+        <br>
+        <h3>{{ prediction_text }}</h3>
+
+        <br>
+        <br>
+        <p>©2022 Abiodun Owoeye</p>
+
+    </div>
+
+<!--Add an input line to save report of details filled with name of patient
+variables and prediction result-->
+<!-- create a sidebar to display report of prediction -->
+<!--Change input text box to range to make the page look better-->
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
