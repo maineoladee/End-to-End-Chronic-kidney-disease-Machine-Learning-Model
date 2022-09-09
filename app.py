@@ -135,7 +135,7 @@ def predict():
         output=round(prediction[0],2)
 
         
-        if output == 1:
+        if output == 0:
             output = "Chronic Kidney Disease"
         else:
             output = "Not Chronic Kidney Disease"
