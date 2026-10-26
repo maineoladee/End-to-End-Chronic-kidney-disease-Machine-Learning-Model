@@ -1,8 +1,8 @@
-# Chronic Kidney Disease Prediction — Machine Learning & Flask
+# Chronic Kidney Disease Prediction: Machine Learning & Flask
 
 An end-to-end **machine learning demonstration** for predicting chronic kidney disease (CKD) from structured patient measurements. The repository brings together a Jupyter notebook for analysis and modelling, saved preprocessing/model artifacts, and a Flask interface for entering features and obtaining a prediction.
 
-> **Portfolio project — not a medical device.** Predictions are for technical demonstration and learning, not for diagnosis, screening, or clinical decision-making. The model has not been established here as clinically validated.
+> **Portfolio project : not a medical device.** Predictions are for technical demonstration and learning, not for diagnosis, screening, or clinical decision-making. The model has not been established here as clinically validated.
 
 ## Project at a glance
 
